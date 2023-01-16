@@ -8,15 +8,15 @@
 
 Console.Clear();
 
-public void InputInt(int num)
+static string InputInt(int num)
 {
     if (num >= 1 && num <= 5)
     {
-        Console.WriteLine($"нет");
+        return "Нет";
     }
     else
     {
-        Console.WriteLine($"да");
+        return "Да";
     }
 }
 
@@ -26,9 +26,10 @@ int num = Convert.ToInt32(Console.ReadLine());
 if (num > 7)
 {
     num = num % 7;
-    Console.WriteLine(InputInt);
+    Console.WriteLine(InputInt(num));
 }
 else
 {
-    Console.WriteLine(InputInt);
+    Console.WriteLine(InputInt(num));
 }
+ 
