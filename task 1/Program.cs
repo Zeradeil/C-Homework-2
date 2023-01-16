@@ -9,11 +9,16 @@
 
 Console.Clear();
 
-System.Console.WriteLine("Введите число");
+Console.WriteLine("Введите число");
 int num = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(num / 10 % 10);
-
-
+if (num > 99 && num < 1000)
+{
+    Console.WriteLine(num / 10 % 10);
+}
+else
+{
+    Console.WriteLine("число не треххначное");
+}
 
 
